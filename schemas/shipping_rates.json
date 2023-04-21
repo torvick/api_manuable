@@ -1,0 +1,34 @@
+{
+    "type": "object",
+    "required": ["address_from", "address_to", "parcel"],
+    "properties": {
+      "address_from": {
+        "type": "object",
+        "required": ["zip", "country"],
+        "properties": {
+          "zip": {"type": "string"},
+          "country": {"type": "string"}
+        }
+      },
+      "address_to": {
+        "type": "object",
+        "required": ["zip", "country"],
+        "properties": {
+          "zip": {"type": "string"},
+          "country": {"type": "string"}
+        }
+      },
+      "parcel": {
+        "type": "object",
+        "required": ["length", "width", "height", "distance_unit", "weight", "mass_unit"],
+        "properties": {
+          "length": {"type": "number"},
+          "width": {"type": "number"},
+          "height": {"type": "number"},
+          "distance_unit": {"type": "string"},
+          "weight": {"type": "number"},
+          "mass_unit": {"type": "string"}
+        }
+      }
+    }
+}
